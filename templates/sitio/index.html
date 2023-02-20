@@ -1,0 +1,54 @@
+{% include 'sitio/cabecera.html'%}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Formulario de registro
+                    </div>
+                    <!--Creacion  del formulario-->
+                    <form action="/guardar" method="post">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" name="nombres" placeholder="Nombre Completos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Edad</label>
+                            <input type="text" class="form-control" name="edad" placeholder="Edad" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Nombres</th>
+                        <th>Edad</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </thead>
+                    <tbody>
+                        <tbody>
+                            <td>1</td>
+                            <td>David</td>
+                            <td>28</td>
+                            <td>tecnisystesminc@gmail.com</td>
+                            <td>Editar | Eliminar</td>
+                        </tbody>
+                    </tbody>
+                </table>
+                
+
+            </div>   
+
+        </div>
+    </div>
+
+{% include 'sitio/pie.html'%}
